@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-for-gh-pages": "ng build --base-href /picture-story/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -18,7 +18,7 @@ jobs:
         run: |
           npm install
           npm test
-          npm run build
+          npm run build-for-gh-pages
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
