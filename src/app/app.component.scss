@@ -1,7 +1,7 @@
 h1 {
     margin: auto;
-    padding: 10px;
 }
+
 .paper {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -31,24 +31,6 @@ h1 {
     right: -3px;
     top: 1px;
     transform: rotate(1.4deg);
-}
-
-.wrapper {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-
-.wrapper .row.header {
-    flex: 0 1 auto;
-}
-
-.wrapper .row.content {
-    flex: 1 1 auto;
-}
-
-.wrapper .row.footer {
-    flex: 0 1 auto;
 }
 
 @media screen and (max-width: 990px) {
