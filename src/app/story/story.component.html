@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <textarea 
+        id="storyInput"
+        [value]="storyText"
+        (input)="storyText = $any($event.target)['value']">
+    </textarea>
+    <app-story-renderer id="renderedStory" [text]="storyText"></app-story-renderer>
+</div>
