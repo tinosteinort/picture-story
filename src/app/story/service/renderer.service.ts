@@ -6,6 +6,10 @@ import { Injectable } from '@angular/core';
 export class RendererService {
 
   render(input: string): string {
-    return `[${input}]`;
+    return this.replaceAll(input, '\n', '<br/>');
+  }
+
+  private replaceAll(str: string, find: string, replace: string): string {
+    return str.replace(new RegExp(find, 'g'), replace);
   }
 }

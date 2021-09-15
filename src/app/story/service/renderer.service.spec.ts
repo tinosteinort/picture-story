@@ -9,7 +9,7 @@ describe('RendererService', () => {
     service = new RendererService();
   });
 
-  it('should be created', () => {
-    expect(service.render('a')).toEqual('[a]');
+  it('should replace new line', () => {
+    expect(service.render('Line1\nLine2')).toEqual('Line1<br/>Line2');
   });
 });
