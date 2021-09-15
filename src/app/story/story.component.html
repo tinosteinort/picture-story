@@ -4,5 +4,5 @@
         [value]="storyText"
         (input)="storyText = $any($event.target)['value']">
     </textarea>
-    <app-story-renderer id="renderedStory" [text]="storyText"></app-story-renderer>
+    <app-story-renderer id="storyRenderer" [text]="storyText"></app-story-renderer>
 </div>
