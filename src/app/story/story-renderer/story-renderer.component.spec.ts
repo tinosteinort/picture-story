@@ -47,9 +47,16 @@ describe('StoryRendererComponent', () => {
   it('should render story', () => {
     jest.spyOn(rendererService, 'render').mockReturnValue('[renderedStory]');
 
-    fixture.componentInstance.text = 'input story text';
     fixture.detectChanges();
 
     expect(fixture.nativeElement.querySelector('.output').textContent).toEqual('[renderedStory]');
+  });
+
+  it('should render story as innerHTML not as innerText', () => {
+    jest.spyOn(rendererService, 'render').mockReturnValue('Hi&lt;b&gt;Hi&lt;/b&gt;Hi');
+
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('.output').textContent).toEqual('Hi<b>Hi</b>Hi');
   });
 });
