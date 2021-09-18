@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build-for-gh-pages": "ng build --base-href /picture-story/",
+    "generate-openmoji-list": "npx ts-node scripts/generate-openmoji-json.ts",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -34,6 +35,8 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^12.11.1",
     "jest": "27.0.6",
+    "openmoji": "^13.1.0",
+    "ts-node": "^10.2.1",
     "typescript": "~4.3.5"
   }
 }
